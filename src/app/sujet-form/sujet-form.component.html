@@ -1,0 +1,41 @@
+<body class="p-3 m-0 border-0 bd-example">
+    <!-- Example Code -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card bg-dark my-5">
+            <div class="card-body">
+              <form (ngSubmit)="onSubmit()" #sujetform="ngForm">
+                <div class="form-group">
+                  <label><h2 class="card-title text-center text-white py-3"
+                    >La classe presente a ete subdiviser en 5 groupe ,Merci
+                        d'entrer les sujet ci dessous</h2>
+                    </label>
+                  <input  [(ngModel)]="sujet.nom"
+                    type="text"
+                    class="form-control"
+                    id="sujet1"
+                    name="sujet"
+                    placeholder="Sujet 1"
+                    required #nom="ngModel"
+                  /><br />
+                </div>
+                <ul class="text-center list-inline py-3">
+                    <li class="list-inline-item">
+                      <button type="submit"  
+                      class="btn btn-info">Submit</button>
+                    <li class="list-inline-item">
+                      <a routerLink="/sujet" class="btn btn-info"> Generation </a>
+                    </li>
+      
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Example Code -->
+  </body>
+
